@@ -64,7 +64,7 @@ form,.Camp{
     background-color: var(--principalColor);
     display: flex;
     width: 350px;
-    height: 400px;
+    height: 300px;
     flex-direction: column;
     justify-content: center;
 }
@@ -87,6 +87,7 @@ h1{
 }
 
 label{
+    text-indent: 10px;
     font-size: 16pt;
     background-color: var(--principalColor);
 }

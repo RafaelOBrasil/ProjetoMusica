@@ -187,6 +187,23 @@ a{
 
 }
 
+.music_main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    width: 79vw;
+    height: 80vh;
+
+}
+
+.music_list{
+    background-color: #ffffff;
+    width: 77vw;
+    height: 20vh;
+
+}
 
 @media (max-width: 800px) {
 

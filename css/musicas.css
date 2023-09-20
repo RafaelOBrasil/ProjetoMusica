@@ -181,10 +181,13 @@ a{
 }
 
 .nav_categorias > ul > a:focus{
-
     color: #ffffff;
     background-color: #000;
+}
 
+.nav_categorias > ul > a:hover{
+    color: #ffffff;
+    background-color: #000;
 }
 
 .music_main{
@@ -201,12 +204,80 @@ a{
 
 .popular, .novidade, .playlist{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1vw;
 }
 
 #playlist1{
-    background-image: url(../img/caneta_Azul/1b56d005723ad175e526bbe57567b8ab_XL.jpg);
+    background-image: url(../img/caneta_Azul/playlist1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#playlist2{
+    background-image: url(../img/caneta_Azul/playlist2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#playlist3{
+    background-image: url(../img/caneta_Azul/playlist3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#playlist4{
+    background-image: url(../img/caneta_Azul/playlist4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#popular1{
+    background-image: url(../img/caneta_Azul/popular1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#popular2{
+    background-image: url(../img/caneta_Azul/popular2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#popular3{
+    background-image: url(../img/caneta_Azul/popular3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#popular4{
+    background-image: url(../img/caneta_Azul/popular4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#novidade1{
+    background-image: url(../img/caneta_Azul/novidade1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#novidade2{
+    background-image: url(../img/caneta_Azul/novidade2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#novidade3{
+    background-image: url(../img/caneta_Azul/novidade3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#novidade4{
+    background-image: url(../img/caneta_Azul/novidade4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -217,11 +288,19 @@ a{
     display: flex;
     align-items: center;
     background-color: #000;
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid white;
+    transition: .3s;
+}
+
+.capa:hover{
+    scale: 1.05;
+    transition: .3s;
 }
 
 h3{
+    padding-left: 2vw;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -229,7 +308,9 @@ h3{
 .music_list{
     width: 77vw;
     height: 20vh;
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 @media (max-width: 800px) {

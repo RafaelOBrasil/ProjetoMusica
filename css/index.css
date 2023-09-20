@@ -55,15 +55,16 @@ main{
 }
 
 hr{
-    margin-top: 20px;
+    
+    margin-top: 40px;
 }
 
 form,.Camp{
     padding: 5px 0;
     background-color: var(--principalColor);
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 400px;
     flex-direction: column;
     justify-content: center;
 }
@@ -90,13 +91,23 @@ label{
     background-color: var(--principalColor);
 }
 
-input[type="button"],[type="submit"]{
+input[type="button"],[type="submit"],.btns{
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    border: 1px inset black;
     width: 100px;
     height: 30px;
     font-size: 10pt;
     padding: 2px;
     border-radius: 15px;
     background-color: var(--white);
+}
+
+.btns:hover{
+    scale: 1.05;
 }
 
 input[type="text"],[type="email"],[type="password"]{
@@ -106,8 +117,8 @@ input[type="text"],[type="email"],[type="password"]{
     font-size: 12pt;
 }
 
-img{
-    margin-bottom: 20px;
+.LogoHeadphonic{
+    margin-bottom: 10px;
     width: 20rem;
     background-color: var(--principalColor);
 }
@@ -122,7 +133,7 @@ span > a{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
         .divImg{
             width: 0;
             height: 0;

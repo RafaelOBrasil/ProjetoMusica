@@ -1,3 +1,10 @@
+:root{
+    --principalColor: #FFA10B;
+    --white: #fff;
+    --black: #000;
+    --blue: #001AFF;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -9,23 +16,51 @@ main{
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #ccc;
+    flex-wrap: wrap;
 }
 
-section{
-    width: 400px;
-    height: 500px;
+.divImg, .divForm{
+    height: 100vh;
+    width: 50vw;
+
+}
+
+.divImg{
+    background-image: url(../img/22083-popular-techno-wallpapers-2560x1600-fuer-phones.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--black);
+
+}
+
+.divForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+.login{
+    width: 450px;
+    height: 550px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--principalColor);
+}
+
+hr{
+    margin-top: 20px;
 }
 
 form,.Camp{
+    padding: 5px 0;
+    background-color: var(--principalColor);
     display: flex;
     width: 300px;
     height: 300px;
@@ -34,6 +69,7 @@ form,.Camp{
 }
 
 #btns{
+    background-color: var(--principalColor);
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -51,14 +87,48 @@ h1{
 
 label{
     font-size: 16pt;
+    background-color: var(--principalColor);
 }
 
 input[type="button"],[type="submit"]{
     width: 100px;
+    height: 30px;
     font-size: 10pt;
     padding: 2px;
+    border-radius: 15px;
+    background-color: var(--white);
 }
 
 input[type="text"],[type="email"],[type="password"]{
-    height: 30px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 12pt;
+}
+
+img{
+    margin-bottom: 20px;
+    width: 20rem;
+    background-color: var(--principalColor);
+}
+
+span > a{
+    color: var(--blue);
+    text-decoration: none;
+    background-color: var(--principalColor);
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+        .divImg{
+            width: 0;
+            height: 0;
+        }
+        .divForm{
+            background-image: url(../img/22083-popular-techno-wallpapers-2560x1600-fuer-phones.jpg);
+            width: 100vw;
+        }
 }

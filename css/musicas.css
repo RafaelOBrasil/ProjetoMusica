@@ -22,7 +22,7 @@ main{
     background: #FFA10B;
 }
 
-header{
+.header_pesquisa{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,6 +119,17 @@ width: 20vw;
     height: 30px;
 }
 
+.menu:hover > img{
+    filter: invert();
+}
+
+.menu:hover{
+    background-color: #000;
+    & h2{
+        color: #fff;
+    }
+}
+
 .menu{
     overflow: hidden;
     border-radius: 15px;
@@ -140,23 +151,40 @@ a{
 }
 
 .nav_categorias{
-    background-color: #FFF;
     display: flex;
+    justify-content: center;
     width: 79vw;
     height: 5vh;
 }
 .nav_categorias > ul{
+    overflow: auto;
     display: flex;
     list-style: none;
 }
 
-.nav_categorias > ul > li{
-    width: 6vw;
-    background-color: #000;
-    height: 5vh;
+.nav_categorias > ul > a{
+    color: #000;
+    gap: 10px;
+    font-size: max(1vw, 15pt);
+    width: 200px;
+    height: 4vh;
     display: flex;
+    flex: 1 0 100px;
     align-items: center;
     justify-content: center;
+    margin: 0 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.nav_categorias > ul::-webkit-scrollbar{
+    display: none;
+}
+
+.nav_categorias > ul > a:focus{
+
+    color: #ffffff;
+    background-color: #000;
+
 }
 
 
